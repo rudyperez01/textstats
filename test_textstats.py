@@ -12,6 +12,10 @@ class TextStatsTests(unittest.TestCase):
         self.assertEqual(count_lines("one\ntwo\nthree"), 3)
         self.assertEqual(count_lines(""), 0)
 
+    def test_count_chars(self):
+        self.assertEqual(count_chars("hello"), 5)
+        self.assertEqual(count_chars(""), 0)
+
 
 if __name__ == "__main__":
     unittest.main()
